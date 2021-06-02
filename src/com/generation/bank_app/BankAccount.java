@@ -14,6 +14,7 @@ public class BankAccount {
         savingsBalance += savingsOpeningDeposit;
     }
 
+
     public double getCheckingBalance() {
         return checkingBalance;
 
@@ -21,6 +22,12 @@ public class BankAccount {
 
     public double getSavingsBalance() {
         return savingsBalance;
+
+    }
+
+    public void withdrawalAmt(double amountWithdrawnChecking, double amountWithdrawnSavings) {
+        checkingBalance -= amountWithdrawnChecking;
+        savingsBalance -= amountWithdrawnSavings;
 
     }
 

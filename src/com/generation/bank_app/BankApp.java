@@ -6,7 +6,9 @@ public class BankApp {
         BankAccount customerAcct = new BankAccount(50.00, 100.00);
         System.out.println(customerAcct.getCheckingBalance());
         System.out.println(customerAcct.getSavingsBalance());
-
+        customerAcct.withdrawalAmt(10.00, 20.00);
+        System.out.println(customerAcct.getCheckingBalance());
+        System.out.println(customerAcct.getSavingsBalance());
     }
 
 
